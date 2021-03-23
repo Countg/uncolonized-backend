@@ -3,3 +3,7 @@
 # Env files
 
 .env
+
+config
+
+keys.js
