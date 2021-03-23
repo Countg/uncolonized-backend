@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const {SENDGRID_API} = require('./config/keys')
+
 require('dotenv').config();
 
 const morgan = require('morgan');
@@ -24,7 +24,7 @@ app.use(cors());
 
 const transporter = nodemailer.createTransport(sendGridTransport({
   auth:{
-      api_key:SENDGRID_API
+      api_key:process.env.SENDGRID_API
   }
 }))
 
