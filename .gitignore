@@ -4,6 +4,6 @@
 
 .env
 
-config
+/config
 
-keys.js
+/keys.js
